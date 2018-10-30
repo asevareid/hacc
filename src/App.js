@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import runningman from './runningman.gif';
 import './App.css';
+import searchbar from './searchbar.png';
 
 class App extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      yo: "yo"
+    }
+  }
+  activateLasers = () => {
+    this.setState({yo: this.state.yo + "o"})
+
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div id="organize">
+       <img src={runningman} width="800px" height="500px"></img>
+         <header>
+          <h1>error for oh for</h1>
         </header>
+      </div>
+<a href="/options">There's no website here</a>
+
       </div>
     );
   }

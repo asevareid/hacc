@@ -1,14 +1,37 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: blue;
+  color: white;
+  font-family: "Massimo", monospace;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+a:link {
+  color: black;
+  background-color: #EEE553;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+a:hover {
+  color: #F9939A;
+}
+
+#runnin {
+
+  width: 200px;
+}
+
+#organize {
+  display: flex;
+}
+
+#organize h1 {
+  font-size: 130px;
+  font-family: "Massimo";
+}
+
+@font-face {
+  font-family: Massimo;
+  src: url(MassimoGrafia-Regular.woff);
 }
