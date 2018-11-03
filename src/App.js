@@ -1,7 +1,10 @@
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import React, { Component } from 'react';
 import runningman from './runningman.gif';
 import './App.css';
 import searchbar from './searchbar.png';
+import Options from './Options';
+import Generator from './Generator';
 
 class App extends Component {
   constructor (props) {
@@ -31,4 +34,20 @@ class App extends Component {
   }
 }
 
-export default App;
+
+const Index = () => <h2>Home</h2>;
+const About = () => <h2>About</h2>;
+const Users = () => <h2>Users</h2>;
+
+const AppRouter = () => (
+  <Router>
+    <div>
+      
+      <Route path="/" exact component={App} />
+      <Route path="/options/" component={Options} />
+      <Route path="/Generator/" component={Generator} />
+    </div>
+  </Router>
+);
+
+export default AppRouter;
