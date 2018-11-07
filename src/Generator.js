@@ -3,17 +3,19 @@ import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import Cursor from './components/Cursor';
+import Page from './components/Page';
+import LinkLinkLink from './components/LinkLinkLink';
 
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      yo: "yo"
+      history: ""
     }
   }
   activateLasers = (input) => {
-    this.setState({ yo: input })
+    this.setState({ history: input })
 
   }
 
@@ -25,10 +27,20 @@ class App extends Component {
     if (history == './cursor') {
       return <Cursor></Cursor>
     }
-
+    if (history == './page') {
+      return <Page></Page>
+    }
+    if (history == './linklinklink') {
+      return <LinkLinkLink></LinkLinkLink>
+    }
   }
 
+functionGenerate = () => {
+var elements = [<SearchBar onClick={this.activateLasers}/>,<Cursor onClick={this.activateLasers} />,<Page onClick={this.activateLasers}/>,<LinkLinkLink onClick={this.activateLasers}/>]
+var element = elements [Math.floor(Math.random()*elements.length)];
+return element
 
+}
 
   render() {
     return (
@@ -38,11 +50,19 @@ class App extends Component {
             <h1>Pick One!</h1>
           </header>
         </div>
-        {this.functionRender(this.state.yo)}
-        <SearchBar onClick={this.activateLasers}></SearchBar>
-        <Cursor onClick={this.activateLasers}></Cursor>
+       
+        {/* <SearchBar onClick={this.activateLasers}></SearchBar>
+        <Cursor onClick={this.activateLasers}></Cursor> */}
 
+        {
+          this.functionGenerate() 
+        }
+        {
+          this.functionGenerate ()
+        }
 
+<h1>chosen</h1>
+{this.functionRender(this.state.history)}
       </div>
     );
   }
