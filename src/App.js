@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import React, { Component } from 'react';
 import runningman from './runningman.gif';
 import './App.css';
-import searchbar from './searchbar.png';
 import Options from './Options';
 import Generator from './Generator';
 

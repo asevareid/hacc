@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import React, { Component } from 'react';
-import runningman from './runningman.gif';
 import './App.css';
-import searchbar from './searchbar.png';
 
 class App extends Component {
   constructor (props) {
