@@ -11,12 +11,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      history: ""
+      history: []
     }
   }
   activateLasers = (input) => {
-    this.setState({ history: input })
-
+    this.setState(prevState => ({
+      history: [...prevState.history, input]
+    }))
   }
 
   functionRender = (history) => {
@@ -62,8 +63,9 @@ return element
         }
 
 <h1>chosen</h1>
-{this.functionRender(this.state.history)}
-      </div>
+{
+  this.state.history.map((currentHistory) => this.functionRender(currentHistory))
+}      </div>
     );
   }
 }
