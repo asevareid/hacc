@@ -48,7 +48,7 @@ return element
       <div className="App">
         <div id="organize">
           <header>
-            <h1>Pick One!</h1>
+            <h3>Pick One!</h3>
           </header>
         </div>
        
