@@ -1,8 +1,22 @@
+html, 
 body {
-  background-color: blue;
-  color: white;
+    height: 100%;
+}
+
+body {
   font-family: "Massimo", monospace;
   
+}
+.home {
+background-color: blue;
+height: 100%;
+width: 100%;
+color: white;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }
 
 a:link {

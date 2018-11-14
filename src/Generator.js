@@ -5,6 +5,7 @@ import SearchBar from './components/SearchBar';
 import Cursor from './components/Cursor';
 import Page from './components/Page';
 import LinkLinkLink from './components/LinkLinkLink';
+import Finish from './Finish';
 
 
 class App extends Component {
@@ -36,38 +37,55 @@ class App extends Component {
     }
   }
 
-functionGenerate = () => {
-var elements = [<SearchBar onClick={this.activateLasers}/>,<Cursor onClick={this.activateLasers} />,<Page onClick={this.activateLasers}/>,<LinkLinkLink onClick={this.activateLasers}/>]
-var element = elements [Math.floor(Math.random()*elements.length)];
-return element
+  functionGenerate = () => {
+    var elements = [<SearchBar onClick={this.activateLasers} />, <Cursor onClick={this.activateLasers} />, <Page onClick={this.activateLasers} />, <LinkLinkLink onClick={this.activateLasers} />]
+    var element = elements[Math.floor(Math.random() * elements.length)];
+    return element
 
-}
+  }
 
   render() {
-    return (
-      <div className="App">
-        <div id="organize">
-          <header>
-            <h3>Pick One!</h3>
-          </header>
+    const isLoggedIn = this.state.isLoggedIn;
+    let button;
+
+    if (this.state.history.length == 3) {
+      button = <Finish history={this.state.history} />;
+    } else {
+      button = (
+        <div className="App">
+          <div id="organize">
+            <header>
+              <h3>Pick One!</h3>
+            </header>
+          </div>
+          <div class="container">
+            <div class="item">{
+              this.functionGenerate()
+            }</div>
+
+            <div class="item">
+              {
+                this.functionGenerate()
+              }
+            </div>
+          </div>
+          <div class="chosen"><h1>chosen</h1>
+            {
+              this.state.history.map((currentHistory) => this.functionRender(currentHistory))
+            }
+          </div>
+
         </div>
-       
-        {/* <SearchBar onClick={this.activateLasers}></SearchBar>
-        <Cursor onClick={this.activateLasers}></Cursor> */}
+      )
+    }
+    return (
+      <div>
+        {button}
 
-        {
-          this.functionGenerate() 
-        }
-        {
-          this.functionGenerate ()
-        }
+      </div>
 
-<h1>chosen</h1>
-{
-  this.state.history.map((currentHistory) => this.functionRender(currentHistory))
-}      </div>
     );
   }
 }
 
-export default App
+export default (App)

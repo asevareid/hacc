@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import runningman from './runningman.gif';
 import './App.css';
 import Options from './Options';
@@ -19,7 +19,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App home">
       <div id="organize">
        <img src={runningman} width="800px" height="500px"></img>
          <header>
@@ -39,14 +39,14 @@ const About = () => <h2>About</h2>;
 const Users = () => <h2>Users</h2>;
 
 const AppRouter = () => (
-  <Router>
-    <div>
-      
-      <Route path="/" exact component={App} />
-      <Route path="/options/" component={Options} />
-      <Route path="/Generator/" component={Generator} />
-    </div>
-  </Router>
+<Router> 
+  <Fragment>
+    <Route path="/" exact component={App} />
+    <Route path="/options/" component={Options} />
+    
+    <Route path="/Generator/" component={Generator} />
+    </Fragment>
+    </Router>
 );
 
 export default AppRouter;
