@@ -1,5 +1,62 @@
+html, 
+body {
+    height: 100%;
+}
+
+body {
+  font-family: "Massimo", monospace;
+  
+}
+.home {
+background-color: blue;
+height: 100%;
+width: 100%;
+color: white;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  clear: both;
+}
+
+a:link {
+  color: black;
+  background-color: #EEE553;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+a:hover {
+  color: #F9939A;
+}
+
+#runnin {
+
+  width: 200px;
+}
+
+#organize {
+  display: flex;
+}
+
+#organize h1 {
+  font-size: 130px;
+  font-family: "Massimo";
+}
+
+@font-face {
+  font-family: Massimo;
+  src: url(MassimoGrafia-Regular.woff);
+}
+
+#root {
+  background-color: #EEE553;
+}
 .App {
   text-align: center;
+  clear: both;
 }
 
 .App-logo {
@@ -15,7 +72,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
@@ -50,4 +107,18 @@
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+.gen {
+    background-color: #EEE553;  
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+.new {
+
+    font-size: 40px;
 }

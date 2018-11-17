@@ -50,7 +50,7 @@ class App extends Component {
         return (
             <div className="App">
 
-                <h1>Here's your website so far!</h1>
+                <div class="new">Here's your website so far!</div>
                 {this.functionRender(this.props.history[0])}
                
                 <div class="container">

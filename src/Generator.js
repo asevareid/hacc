@@ -79,7 +79,7 @@ class App extends Component {
       )
     }
     return (
-      <div>
+      <div class="gen">
         {button}
 
       </div>
