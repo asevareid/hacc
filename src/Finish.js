@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar';
 import Cursor from './components/Cursor';
-import Page from './components/Page';
 import LinkLinkLink from './components/LinkLinkLink';
+import Page from './components/Page';
 
 
 class App extends Component {
@@ -47,21 +47,28 @@ class App extends Component {
     }
 
     render() {
-        return (
-            <div className="App">
+        return ( 
+            <div className="App finish">
+           
 
                 <div class="new">Here's your website so far!</div>
-                {this.functionRender(this.props.history[0])}
-               
                 <div class="container">
-                    <div class="item">{this.functionRender(this.props.history[1])}</div>
-                    <div class="item">{this.functionRender(this.props.history[2])}</div>
+                    <div class="item">
+                        {this.functionRender(this.props.history[0])}
 
+                        <div class="container">
+                            <div class="item">{this.functionRender(this.props.history[1])}</div>
+                            <div class="item">{this.functionRender(this.props.history[2])}</div>
 
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="/Advertise">Want More?</a>
+                    </div>
                 </div>
-                <a href="/Advertise">Want More?</a>
             </div>
-       
+
         );
     }
 }

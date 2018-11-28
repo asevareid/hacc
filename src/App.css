@@ -5,14 +5,20 @@ body {
 
 body {
   font-family: "Massimo", monospace;
-  
 }
+
 .home {
 background-color: blue;
 height: 100%;
 width: 100%;
 color: white;
 }
+
+.finish {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  }
 
 #root {
   height: 100%;
@@ -21,10 +27,13 @@ color: white;
 
 a:link {
   color: black;
-  background-color: #EEE553;
   padding-top: 5px;
   padding-bottom: 5px;
 
+}
+
+#homelink {
+  background-color: #EEE553;
 }
 
 a:hover {
@@ -129,4 +138,12 @@ body {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+}
+
+.yourfate {
+  font-size: 120px;
+}
+
+.yourfate a {
+  padding-right: 50px;
 }

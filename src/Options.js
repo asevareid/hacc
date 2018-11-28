@@ -3,29 +3,31 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
     this.state = {
       yo: "yo"
     }
   }
   activateLasers = () => {
-    this.setState({yo: this.state.yo + "o"})
+    this.setState({ yo: this.state.yo + "o" })
 
   }
 
   render() {
     return (
       <div className="App">
-      <div id="organize">
-         <header>
-          <h1>Want to make one?</h1>
-        </header>
-      </div>
-      <Link to="/Generator">Yes</Link>
+        <div id="organize">
+          <header>
+            <h1>Want to make one?</h1>
+          </header>
+        </div>
+        <div className="yourfate">
+          <Link to="/Generator">Yes</Link>
 
-      <Link to="/">No</Link>
+          <Link to="/">No</Link>
 
+        </div>
       </div>
     );
   }

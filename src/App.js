@@ -27,8 +27,9 @@ class App extends Component {
           <h1>error for oh for</h1>
         </header>
       </div>
-<a href="/options">There's no website here</a>
-
+      <div >
+<a href="/options" id="homelink">There's no website here</a>
+      </div>
       </div>
     );
   }

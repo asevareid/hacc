@@ -80,10 +80,10 @@ class App extends Component {
       )
     }
     return (
-      <div class="gen">
+      <React.Fragment>
         {button}
 
-      </div>
+      </React.Fragment>
 
     );
   }

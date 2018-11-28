@@ -5,6 +5,7 @@ import './App.css';
 import Options from './Options';
 import Generator from './Generator';
 import background from './background.png';
+import instalogo from './instalogo.png';
 
 class App extends Component {
     constructor (props) {
@@ -23,6 +24,7 @@ class App extends Component {
         <div className="App home">
         <div id="info">
         </div>
+        <a href="/"><img src={instalogo} width="200px"></img></a>
         </div>
       );
     }
