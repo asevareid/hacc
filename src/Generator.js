@@ -6,6 +6,7 @@ import Cursor from './components/Cursor';
 import Page from './components/Page';
 import LinkLinkLink from './components/LinkLinkLink';
 import Finish from './Finish';
+import Advertise from './Advertise';
 
 
 class App extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import searchbar from './searchbar.png';
-import cursor from './cursor.png';
+import refresh from './refresh.png';
 class Welcome extends React.Component {
     render() {
         return (

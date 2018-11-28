@@ -17,7 +17,6 @@ color: white;
 #root {
   height: 100%;
   width: 100%;
-  clear: both;
 }
 
 a:link {
@@ -121,4 +120,13 @@ body {
 .new {
 
     font-size: 40px;
+}
+
+#info {
+  background-image: url(./background.png);
+  z-index: 999;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }

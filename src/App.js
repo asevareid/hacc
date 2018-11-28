@@ -4,6 +4,7 @@ import runningman from './runningman.gif';
 import './App.css';
 import Options from './Options';
 import Generator from './Generator';
+import Advertise from './Advertise';
 
 class App extends Component {
   constructor (props) {
@@ -45,6 +46,7 @@ const AppRouter = () => (
     <Route path="/options/" component={Options} />
     
     <Route path="/Generator/" component={Generator} />
+    <Route path="/Advertise/" component={Advertise} />
     </Fragment>
     </Router>
 );

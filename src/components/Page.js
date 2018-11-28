@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import searchbar from './searchbar.png';
-import page from './page.png';
+import page from './x.png';
 class Welcome extends React.Component {
     render() {
         return (

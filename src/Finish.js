@@ -59,7 +59,9 @@ class App extends Component {
 
 
                 </div>
+                <a href="/Advertise">Want More?</a>
             </div>
+       
         );
     }
 }
