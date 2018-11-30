@@ -10,3 +10,4 @@ FileUtils.cp('template.css', "#{new_folder}/index.css")
 
 
 `code #{new_folder}/index.html`
+`open #{new_folder}/index.html`

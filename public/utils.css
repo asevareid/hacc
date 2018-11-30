@@ -1,4 +1,12 @@
 
+.askadev {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  border: black 1px solid;
+}
+
 .r20 {
   -ms-transform: rotate(20deg); /* IE 9 */
   -webkit-transform: rotate(20deg); /* Safari */
