@@ -1,0 +1,13 @@
+.first
+{
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+
+.second {
+  position: relative;
+
+  float: right;
+
+}
