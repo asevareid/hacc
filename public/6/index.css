@@ -1,0 +1,15 @@
+.first {
+  position: relative;
+  left: 200px;
+
+}
+
+.second{
+  position: relative;
+  left: 20px;
+}
+
+.third {
+  position: relative;
+  left: 300px;
+}
