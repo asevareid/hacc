@@ -13,6 +13,10 @@
   transform: rotate(20deg);
 }
 
+.pull-right {
+  float:right;
+}
+
 .img {
   z-index: -999;
 }
