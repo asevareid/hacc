@@ -13,6 +13,15 @@
   transform: rotate(20deg);
 }
 
+.img {
+  z-index: -999;
+}
+
+.r90 {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);
+}
 
 .r45 {
   -ms-transform: rotate(45deg); /* IE 9 */
