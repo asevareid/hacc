@@ -21,7 +21,7 @@ class App extends Component {
   render () {
 
     var links =[]
-    for (var i =0; i<= 28; i++)  {
+    for (var i =1; i<= 28; i++)  {
       links.push({ key: i, href: `/${i}`})
     }
 
