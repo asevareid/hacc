@@ -1,0 +1,21 @@
+.second {
+  font-size: 30px;
+}
+
+.bottom {
+  position: relative;
+  top: 30px;
+  left: 300px;
+}
+
+.third {
+  position: relative;
+
+  left: 20px;
+  top: 200px;
+}
+
+.fourth {
+  position: relative;
+  left: 50px;
+}
