@@ -1,0 +1,36 @@
+.first {
+  position: relative;
+  left: 200px;
+  top: 200px;
+}
+.second {
+  right: 30px;
+  color: red;
+  transform: rotate(-30deg);
+  position: relative;
+}
+
+
+.link {
+  position:relative;
+  top: 300px;
+  left: 300px;
+}
+.yes{
+top: 200px;
+color: blue;
+position: relative;
+}
+
+.no {
+  position: relative;
+  left: 100px;
+
+}
+
+.new-file {
+  position: relative;
+  top:  200px;
+
+  left: 200px;
+}
