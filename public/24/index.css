@@ -1,0 +1,11 @@
+.first {
+  position: relative;
+  top: 250px;
+  left: 200px;
+
+}
+.second {
+  left: 100px;
+  position: relative;
+  /* transform: rotate(-50deg); */
+}
