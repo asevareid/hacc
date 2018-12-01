@@ -1,0 +1,32 @@
+
+.first {
+  position: relative;
+  top: 500px;
+}
+.second {
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.root {
+  position: relative;
+  left: 50px;
+}
+.third {
+  position: relative;
+  left: 50px;
+}
+
+.six {
+  position: relative;
+  left: 220px;
+  transform: rotate(120deg);
+  top: 150px;
+}
+
+.five {
+  position: relative;
+  top: -30px;
+  left: 75px;
+}
