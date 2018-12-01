@@ -1,0 +1,20 @@
+.first {
+
+  position: relative;
+  top:200px;
+  left: 300px;
+}
+
+.second {
+
+  position: relative;
+  left: 30px;
+  transform: rotate(-30deg);
+}
+
+.third {
+
+  position: relative;
+  top: 300px;
+  transform: rotate(-70deg);
+}
