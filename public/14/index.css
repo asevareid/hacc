@@ -1,0 +1,28 @@
+
+.first {
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+.second {
+  position: relative;
+  left: 50px;
+  top: 100px;
+
+  color: red;
+  transform: rotate(92deg);
+}
+
+.third {
+  position: relative;
+  left: 150px;
+  top: 250px;
+}
+
+.four {
+  font-size: 2em;
+  top: 200px;
+  left: 0;
+  position: relative;
+  transform: rotate(-90deg);
+}
